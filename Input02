@@ -1,0 +1,31 @@
+import javax.swing.JOptionPane;
+
+public class Input02 {
+    public static void main(String[] args) {
+        
+        JOptionPane.showMessageDialog(null,
+                "Hello",
+                "Hi",
+                0);
+
+        
+        String input1 = (String)JOptionPane.showInputDialog(null,
+                "Are you there?",
+                "I can't see you",
+                2,
+                null,
+                null,
+                "Please respond.");
+        
+        
+        String[] acceptableValues = {"Good", "Bad", "Awful"};
+        String input2 = (String)JOptionPane.showInputDialog(null,
+                "How do you feel?",
+                "I genuinely care",
+                2,
+                null,
+                acceptableValues,
+                acceptableValues[1]);
+                
+    }
+}
